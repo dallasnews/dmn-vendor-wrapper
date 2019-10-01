@@ -1,0 +1,65 @@
+*,
+::after,
+::before {
+  border: 0 solid #101010;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+*,
+::after,
+::before {
+  border: 0 solid #101010;
+  border-top-color: rgb(16, 16, 16);
+  border-top-width: 0px;
+  border-right-color: rgb(16, 16, 16);
+  border-bottom-color: rgb(16, 16, 16);
+  border-left-color: rgb(16, 16, 16);
+}
+
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+  display: block;
+  vertical-align: middle;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a {
+  background-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 0;
+  list-style: none;
+}

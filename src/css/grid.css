@@ -1,0 +1,52 @@
+.row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  max-width: 80rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.row.expanded {
+  max-width: none;
+}
+
+.column,
+.columns {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.column,
+.columns {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.column,
+.columns {
+  flex: 1 1;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  min-width: 0;
+}
+
+@media print, screen and (min-width: 48em) {
+  .column,
+  .columns {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+}
+
+@media print, screen and (min-width: 30em) {
+  .column,
+  .columns {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}

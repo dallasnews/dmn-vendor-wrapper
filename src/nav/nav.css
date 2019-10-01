@@ -1,0 +1,124 @@
+.navbar {
+  min-height: 48px;
+  overflow: hidden;
+  display: flex;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  border-style: solid;
+  border-color: #eceff1;
+}
+
+.navbar-segment-left {
+  display: flex;
+}
+
+@media screen and (min-width: 64em) {
+  .navbar-segment-left {
+    flex-basis: 230px;
+    flex-shrink: 2;
+    flex-grow: 1;
+  }
+}
+
+.navbar-segment-center {
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (min-width: 64em) {
+  .navbar-segment-center {
+    flex-basis: auto;
+    flex-grow: 2;
+    flex-shrink: 1;
+  }
+}
+
+.navbar-section-center {
+  display: none;
+}
+
+@media screen and (min-width: 64em) {
+  .navbar-section-center {
+    display: block;
+  }
+}
+
+ul.primary-links {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  display: flex;
+}
+
+.top-level-link {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.top-level-link,
+.top-level-link:focus {
+  outline: 0;
+}
+
+.nav-link {
+  min-width: 0;
+  transition: opacity 0.3s ease;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-size: 12px;
+  line-height: 1.45;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  align-items: center;
+  display: flex;
+}
+
+.navbar-segment-right {
+  justify-content: flex-end;
+  display: flex;
+}
+
+@media screen and (min-width: 64em) {
+  .navbar-segment-right {
+    flex-basis: 230px;
+    flex-shrink: 0;
+    flex-grow: 1;
+  }
+}
+
+.fwd-dfw-section {
+  display: none;
+  border-left-width: 1px;
+  border-style: solid;
+  border-color: #eceff1;
+}
+
+@media screen and (min-width: 768px) {
+  .fwd-dfw-section {
+    display: flex;
+  }
+}
+
+.focus_outline-none:focus,
+.outline-none {
+  outline: 0;
+}
+
+.nav-button {
+  padding-left: 12px;
+  padding-right: 12px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.nav-button-icon {
+  flex-grow: 0;
+}
