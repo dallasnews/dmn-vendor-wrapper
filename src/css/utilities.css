@@ -81,10 +81,6 @@
   cursor: pointer;
 }
 
-.pt-8 {
-  padding-top: 24px;
-}
-
 .pb-6 {
   padding-bottom: 16px;
 }
@@ -98,8 +94,20 @@
   padding-bottom: 16px;
 }
 
+.pt-8 {
+  padding-top: 24px;
+}
+
 .h-7 {
   height: 20px;
+}
+
+.h-8 {
+  height: 24px;
+}
+
+.w-8 {
+  width: 24px;
 }
 
 .small-2 {
@@ -131,6 +139,17 @@
   .medium-12 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .md_mx-3 {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+@media print, screen and (min-width: 1024px) {
+  .xl_px-5 {
+    padding: 0 12px;
   }
 }
 
@@ -171,5 +190,11 @@
 
   .md-down_border-gray-light {
     border-color: #eceff1;
+  }
+}
+
+@media print, screen and (min-width: 48em) and (min-width: 48em) {
+  .large-expand {
+    flex: 1 1;
   }
 }

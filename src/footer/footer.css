@@ -10,13 +10,6 @@
   padding: 16px 0;
 }
 
-/* social link */
-@media print, screen and (min-width: 1024px) {
-  .social-link {
-    padding: 0 12px;
-  }
-}
-
 /* top bar logo */
 .top-bar-logo {
   width: 250px;
@@ -27,38 +20,18 @@
   font-size: 11px;
 }
 
-/* footer nav column section title */
 .todo-font {
   /* TODO */
 }
 
-/* footer nav column link list <ul> */
-.secondaryRoman-20 {
-  font-size: 14px;
-  line-height: 1.4;
-  letter-spacing: 0;
-}
-
-.todo-font {
-  /* TODO */
-}
-
-/* bottom bar row */
-.todo-font {
-  /* TODO */
-}
-
-/* copyright */
 secondaryRoman-10 {
-  /* TODO */
   font-size: 12px;
   line-height: 1.45;
   letter-spacing: 0;
 }
 
-/* Utilities that must come @ bottom */
-@media print, screen and (min-width: 48em) and (min-width: 48em) {
-  .large-expand {
-    flex: 1 1;
-  }
+.secondaryRoman-20 {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
 }
