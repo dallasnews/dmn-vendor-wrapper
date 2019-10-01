@@ -13,16 +13,16 @@
   width: 200px;
 }
 
-@media print, screen and (min-width: 48em) {
-  .masthead-logo {
-    width: 500px;
-    padding: 32px 0 28px;
-  }
-}
-
 @media print, screen and (min-width: 30em) {
   .masthead-logo {
     width: 240px;
     padding: 24px 0;
+  }
+}
+
+@media print, screen and (min-width: 48em) {
+  .masthead-logo {
+    width: 500px;
+    padding: 32px 0 28px;
   }
 }
