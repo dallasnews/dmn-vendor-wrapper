@@ -1,46 +1,74 @@
-<nav class="navbar">
-  <section class="navbar-segment-left">
+<nav
+  class="navbar border-solid border-gray-light flex border-t border-b overflow-hidden"
+>
+  <section class="navbar-segment-left flex">
     <!-- SEARCH BAR IS REMOVED FOR IFRAME -->
   </section>
 
-  <div class="navbar-segment-center">
-    <section class="navbar-section-center">
-      <ul class="primary-links">
-        <li class="top-level-link">
+  <div class="navbar-segment-center flex flex-grow items-center justify-center">
+    <section class="navbar-section-center hidden xl_block">
+      <ul class="primary-links justify-around flex ml-auto mr-auto">
+        <li
+          class="top-level-link flex items-center justify-center outline-none focus_outline-none"
+        >
           <a class="nav-link" href="/news">News</a>
         </li>
-        <li class="top-level-link">
+        <li
+          class="top-level-link flex items-center justify-center outline-none focus_outline-none"
+        >
           <a class="nav-link" href="/business">Business</a>
         </li>
-        <li class="top-level-link">
+        <li
+          class="top-level-link flex items-center justify-center outline-none focus_outline-none"
+        >
           <a class="nav-link" href="/sports">Sports</a>
         </li>
-        <li class="top-level-link">
+        <li
+          class="top-level-link flex items-center justify-center outline-none focus_outline-none"
+        >
           <a class="nav-link" href="/high-school-sports">High School Sports</a>
         </li>
-        <li class="top-level-link">
+        <li
+          class="top-level-link flex items-center justify-center outline-none focus_outline-none"
+        >
           <a class="nav-link" href="/arts-entertainment"
             >Arts &amp; Entertainment
           </a>
         </li>
-        <li class="top-level-link">
+        <li
+          class="top-level-link flex items-center justify-center outline-none focus_outline-none"
+        >
           <a class="nav-link" href="/food">Food</a>
         </li>
-        <li class="top-level-link">
+        <li
+          class="top-level-link flex items-center justify-center outline-none focus_outline-none"
+        >
           <a class="nav-link" href="/arts-entertainment/things-to-do"
             >Things to Do</a
           >
         </li>
-        <li class="top-level-link">
+        <li
+          class="top-level-link flex items-center justify-center outline-none focus_outline-none"
+        >
           <a class="nav-link" href="/opinion">Opinion</a>
         </li>
       </ul>
     </section>
   </div>
-  <div class="navbar-segment-right">
-    <section class="fwd-dfw-section">
-      <a class="nav-button" title="FWD DFW" href="https://fwddfw.com/"
-        ><svg viewBox="0 0 437 116.685" class="nav-button-icon" width="107px">
+
+  <div class="navbar-segment-right flex justify-end">
+    <section
+      class="fwd-dfw-section border-solid border-gray-light border-l hidden lg_flex"
+    >
+      <a
+        class="fwd-dfw-button px-5 flex items-center justify-center outline-none focus_outline-none"
+        title="FWD DFW"
+        href="https://fwddfw.com/"
+        ><svg
+          viewBox="0 0 437 116.685"
+          class="fwd-dfw-button-icon flex-grow-0"
+          width="107px"
+        >
           <path
             fill="#77777D"
             d="M10.231 92.037H5.324v-1.519h11.458v1.519h-4.907v13.039h-1.644zM15.786 99.752v-.042c0-3.036 2.37-5.614 5.614-5.614 3.223 0 5.594 2.536 5.594 5.573v.041c0 3.036-2.392 5.615-5.636 5.615-3.223 0-5.572-2.537-5.572-5.573m9.565 0v-.042c0-2.309-1.726-4.2-3.993-4.2-2.328 0-3.93 1.891-3.93 4.159v.041c0 2.308 1.705 4.18 3.972 4.18 2.329 0 3.951-1.872 3.951-4.138M29.344 106.947l.728-1.248c1.226.895 2.599 1.372 4.138 1.372 2.37 0 3.909-1.31 3.909-3.825v-1.269c-.935 1.248-2.246 2.266-4.221 2.266-2.578 0-5.053-1.933-5.053-5.032v-.041c0-3.14 2.496-5.074 5.053-5.074 2.017 0 3.327.998 4.201 2.162v-1.934H39.7v8.88c0 1.663-.499 2.932-1.372 3.805-.957.956-2.392 1.435-4.097 1.435-1.788 0-3.452-.498-4.887-1.497m8.817-7.757v-.041c0-2.204-1.913-3.639-3.951-3.639s-3.722 1.414-3.722 3.618v.042c0 2.162 1.726 3.659 3.722 3.659 2.038 0 3.951-1.476 3.951-3.639M42.218 99.731v-.041c0-3.099 2.183-5.594 5.156-5.594 3.182 0 5.012 2.536 5.012 5.677 0 .207 0 .333-.02.52h-8.527c.229 2.329 1.872 3.639 3.785 3.639 1.477 0 2.516-.603 3.39-1.518l.998.894c-1.081 1.206-2.392 2.017-4.429 2.017-2.954 0-5.365-2.266-5.365-5.594m8.546-.624c-.166-1.955-1.289-3.659-3.431-3.659-1.871 0-3.286 1.559-3.494 3.659h6.925zM55.34 102.227v-6.488h-1.497v-1.414h1.497v-3.244h1.602v3.244h3.41v1.414h-3.41v6.28c0 1.311.728 1.788 1.809 1.788.54 0 .998-.104 1.559-.373v1.372c-.561.291-1.164.457-1.933.457-1.727 0-3.037-.853-3.037-3.036M62.786 89.895h1.601v6.301c.707-1.165 1.83-2.1 3.681-2.1 2.599 0 4.117 1.746 4.117 4.304v6.676h-1.601v-6.281c0-1.996-1.082-3.244-2.974-3.244-1.85 0-3.223 1.352-3.223 3.369v6.156h-1.601V89.895zM74.536 99.731v-.041c0-3.099 2.183-5.594 5.156-5.594 3.183 0 5.012 2.536 5.012 5.677 0 .207 0 .333-.021.52h-8.525c.228 2.329 1.871 3.639 3.784 3.639 1.477 0 2.517-.603 3.39-1.518l.998.894c-1.081 1.206-2.393 2.017-4.429 2.017-2.953 0-5.365-2.266-5.365-5.594m8.546-.624c-.166-1.955-1.289-3.659-3.431-3.659-1.871 0-3.286 1.559-3.493 3.659h6.924zM87.097 94.324h1.602v2.808c.79-1.788 2.35-3.079 4.388-2.995v1.726h-.125c-2.351 0-4.263 1.685-4.263 4.928v4.284h-1.602V94.324zM100.032 94.324h1.705l2.828 8.63 2.891-8.671h1.331l2.911 8.671 2.829-8.63h1.663l-3.785 10.834h-1.393l-2.89-8.484-2.911 8.484h-1.415zM118.5 90.208h1.83v1.767h-1.83v-1.767zm.104 4.116h1.602v10.751h-1.602V94.324zM124.094 102.227v-6.488h-1.497v-1.414h1.497v-3.244h1.602v3.244h3.41v1.414h-3.41v6.28c0 1.311.728 1.788 1.809 1.788.541 0 .998-.104 1.56-.373v1.372c-.562.291-1.164.457-1.934.457-1.727 0-3.037-.853-3.037-3.036M131.539 89.895h1.602v6.301c.707-1.165 1.829-2.1 3.681-2.1 2.599 0 4.117 1.746 4.117 4.304v6.676h-1.602v-6.281c0-1.996-1.081-3.244-2.974-3.244-1.851 0-3.223 1.352-3.223 3.369v6.156h-1.602V89.895zM160.773 104.291c.027.027 1.426-.188 2.125-.591 1.424-.833 2.042-2.098 2.042-3.763V92.3c0-.109 0-.242-.107-.268-.081-.028-.188.026-.241.079l-4.948 4.41a.317.317 0 0 0-.08.188c0 .055 0 .162.028.188l.482.619c.028.053.135.027.189.027a.29.29 0 0 0 .161-.053l1.29-1.048v6.075c.001.779-1.022 1.721-.941 1.774"

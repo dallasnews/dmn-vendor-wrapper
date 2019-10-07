@@ -1,16 +1,6 @@
 .navbar {
   min-height: 48px;
-  overflow: hidden;
-  display: flex;
-  border-bottom-width: 1px;
-  border-top-width: 1px;
-  border-style: solid;
-  border-color: #eceff1;
   font-family: "HCo Gotham";
-}
-
-.navbar-segment-left {
-  display: flex;
 }
 
 @media screen and (min-width: 64em) {
@@ -21,13 +11,6 @@
   }
 }
 
-.navbar-segment-center {
-  flex-grow: 1;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
 @media screen and (min-width: 64em) {
   .navbar-segment-center {
     flex-basis: auto;
@@ -36,6 +19,7 @@
   }
 }
 
+/* TODO: fix this behavior */
 .navbar-section-center {
   display: none;
 }
@@ -44,13 +28,6 @@
   .navbar-section-center {
     display: block;
   }
-}
-
-ul.primary-links {
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-around;
-  display: flex;
 }
 
 .top-level-link {
@@ -81,11 +58,6 @@ ul.primary-links {
   display: flex;
 }
 
-.navbar-segment-right {
-  justify-content: flex-end;
-  display: flex;
-}
-
 @media screen and (min-width: 64em) {
   .navbar-segment-right {
     flex-basis: 230px;
@@ -94,32 +66,7 @@ ul.primary-links {
   }
 }
 
-.fwd-dfw-section {
-  display: none;
-  border-left-width: 1px;
-  border-style: solid;
-  border-color: #eceff1;
-}
-
-@media screen and (min-width: 768px) {
-  .fwd-dfw-section {
-    display: flex;
-  }
-}
-
 .focus_outline-none:focus,
 .outline-none {
   outline: 0;
-}
-
-.nav-button {
-  padding-left: 12px;
-  padding-right: 12px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.nav-button-icon {
-  flex-grow: 0;
 }
