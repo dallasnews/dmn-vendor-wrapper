@@ -13,3 +13,19 @@
   font-style: normal;
   font-display: swap;
 }
+
+.font-gotham {
+  font-family: "HCo Gotham";
+}
+
+secondaryRoman-10 {
+  font-size: 12px;
+  line-height: 1.45;
+  letter-spacing: 0;
+}
+
+.secondaryRoman-20 {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
