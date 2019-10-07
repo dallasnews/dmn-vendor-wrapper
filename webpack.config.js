@@ -1,5 +1,3 @@
-// https://github.com/juristr/webpack-typescript-starter
-
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -7,8 +5,15 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const SRC = path.resolve(__dirname, "src");
 const DIST = path.resolve(__dirname, "dist");
 
-const common = {
+const config = {
   context: SRC,
+  entry: {
+    index: "./index.js"
+  },
+  output: {
+    filename: "index.js",
+    path: DIST
+  },
   resolve: {
     extensions: [".js"],
     modules: [SRC, "node_modules"]
@@ -25,7 +30,7 @@ const common = {
       },
       {
         test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /(node_modules)/,
         use: {
           loader: "babel-loader",
           options: {
@@ -34,21 +39,10 @@ const common = {
         }
       }
     ]
-  }
-};
-
-const web = {
-  ...common,
-  entry: {
-    index: "./web.js"
-  },
-  output: {
-    filename: "web.js",
-    path: DIST
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: `${SRC}/test.html`
+      template: `${SRC}/index.html`
     })
   ],
   devtool: "cheap-module-source-map",
@@ -63,18 +57,4 @@ const web = {
   }
 };
 
-const lib = {
-  ...common,
-  entry: {
-    index: "./lib.js"
-  },
-  output: {
-    filename: "lib.js",
-    library: "wrapper",
-    // libraryTarget: "umd",
-    path: DIST
-  },
-  target: "node"
-};
-
-module.exports = [web, lib];
+module.exports = config;
