@@ -35,7 +35,7 @@ module.exports = (watch) => {
       };
 
       const bundler = wrapper(browserify(props).transform(babelify, {
-        presets: ['env'],
+        presets: ['@babel/preset-env'],
       }));
 
       function bundle() {

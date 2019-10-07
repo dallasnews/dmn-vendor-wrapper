@@ -1,5 +1,6 @@
 import $ from 'jquery';
 
+import "./../../../../dist/index";
 import './furniture';
 
 $(document).ready(() => {
