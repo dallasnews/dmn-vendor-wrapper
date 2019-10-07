@@ -2,33 +2,6 @@
   min-height: 48px;
 }
 
-@media screen and (min-width: 64em) {
-  .navbar-segment-left {
-    flex-basis: 230px;
-    flex-shrink: 2;
-    flex-grow: 1;
-  }
-}
-
-@media screen and (min-width: 64em) {
-  .navbar-segment-center {
-    flex-basis: auto;
-    flex-grow: 2;
-    flex-shrink: 1;
-  }
-}
-
-/* TODO: fix this behavior */
-.navbar-section-center {
-  display: none;
-}
-
-@media screen and (min-width: 64em) {
-  .navbar-section-center {
-    display: block;
-  }
-}
-
 .top-level-link {
   justify-content: center;
   align-items: center;
@@ -57,15 +30,27 @@
   display: flex;
 }
 
-@media screen and (min-width: 64em) {
-  .navbar-segment-right {
-    flex-basis: 230px;
-    flex-shrink: 0;
-    flex-grow: 1;
-  }
-}
-
 .focus_outline-none:focus,
 .outline-none {
   outline: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-segment-left {
+    flex-basis: 200px;
+    flex-shrink: 2;
+    flex-grow: 1;
+  }
+
+  .navbar-segment-center {
+    flex-basis: auto;
+    flex-shrink: 1;
+    flex-grow: 2;
+  }
+  
+  .navbar-segment-right {
+    flex-basis: 200px;
+    flex-shrink: 2;
+    flex-grow: 1;
+  }
 }

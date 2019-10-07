@@ -202,6 +202,10 @@
   .xl_block {
     display: block;
   }
+
+  .xl_flex {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -215,6 +219,10 @@
 
   .lg_border-t {
     border-top-width: 1px;
+  }
+
+  .lg_border-none {
+    border: none;
   }
 
   .lg_py-10 {
