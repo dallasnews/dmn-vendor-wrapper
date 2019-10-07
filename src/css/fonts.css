@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "HCo Gotham";
+  src: url("../fonts/woff2/Gotham-Book_Web-kern-latin.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HCo Gotham";
+  src: url("../fonts/woff2/Gotham-Medium_Web-kern-latin.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

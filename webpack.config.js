@@ -37,6 +37,10 @@ const config = {
             presets: ["@babel/preset-env"]
           }
         }
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        use: ["url-loader"]
       }
     ]
   },
