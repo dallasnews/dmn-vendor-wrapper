@@ -1,15 +1,12 @@
-/* top bar */
 .footer-top-bar {
   border-top: 3px solid #101010;
   border-bottom: 1px solid #eceff1;
 }
 
-/* social links container */
 .social-link-container {
   padding: 16px 0;
 }
 
-/* top bar logo */
 .top-bar-logo {
   width: 250px;
   padding-bottom: 4px;
