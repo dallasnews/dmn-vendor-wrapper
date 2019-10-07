@@ -7,21 +7,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const SRC = path.resolve(__dirname, "src");
 const DIST = path.resolve(__dirname, "dist");
 
-module.exports = {
-  optimization: {
-    namedModules: true,
-    namedChunks: true
-  },
+const common = {
   context: SRC,
-  entry: {
-    index: "./index.js"
-  },
-
-  output: {
-    filename: "bundle.js",
-    path: DIST
-  },
-
   resolve: {
     extensions: [".js"],
     modules: [SRC, "node_modules"]
@@ -37,7 +24,7 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       },
       {
-        test: /\.m?js$/,
+        test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: "babel-loader",
@@ -45,17 +32,23 @@ module.exports = {
             presets: ["@babel/preset-env"]
           }
         }
-      },
-      {
-        test: /\.ts$/,
-        exclude: [/node_modules/],
-        use: "awesome-typescript-loader"
       }
     ]
+  }
+};
+
+const web = {
+  ...common,
+  entry: {
+    index: "./web.js"
+  },
+  output: {
+    filename: "web.js",
+    path: DIST
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: `${SRC}/index.html`
+      template: `${SRC}/test.html`
     })
   ],
   devtool: "cheap-module-source-map",
@@ -69,3 +62,19 @@ module.exports = {
     hot: false
   }
 };
+
+const lib = {
+  ...common,
+  entry: {
+    index: "./lib.js"
+  },
+  output: {
+    filename: "lib.js",
+    library: "wrapper",
+    // libraryTarget: "umd",
+    path: DIST
+  },
+  target: "node"
+};
+
+module.exports = [web, lib];
