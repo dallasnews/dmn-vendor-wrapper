@@ -6,10 +6,7 @@ import Masthead from "./masthead";
 import Nav from "./nav";
 import Footer from "./footer";
 
-console.log("Web bundle loaded.");
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("DOMContentLoaded event fired.");
-
   const masthead = document.createElement("div");
   masthead.innerHTML = Masthead();
   document.getElementById("nav").appendChild(masthead);
