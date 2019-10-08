@@ -1,6 +1,6 @@
 import "./css/normalize.css";
 import "./css/grid.css";
-import "./css/utilities.css";
+import "./css/utilities.scss";
 import "./css/fonts.css";
 import Masthead from "./masthead";
 import Nav from "./nav";
