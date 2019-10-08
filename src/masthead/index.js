@@ -1,4 +1,4 @@
 import markup from "./masthead.html";
-import "./masthead.css";
+import "./masthead.scss";
 
 export default () => markup;

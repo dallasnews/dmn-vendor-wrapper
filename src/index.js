@@ -1,7 +1,7 @@
-import "./css/normalize.css";
-import "./css/grid.css";
-import "./css/utilities.scss";
-import "./css/fonts.css";
+import "./assets/scss/normalize.scss";
+import "./assets/scss/grid.scss";
+import "./assets/scss/utilities.scss";
+import "./assets/scss/fonts.scss";
 import Masthead from "./masthead";
 import Nav from "./nav";
 import Footer from "./footer";
