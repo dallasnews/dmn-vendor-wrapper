@@ -28,7 +28,7 @@ import "./../../../../dist/index";
 
 ## Interactives
 
-I used John Hancock's Yeoman generated starter project to implement an example for DMN's interactives team.  Check it out in the `/examples` folder. It is a Browserify environment. Check out `interactive-furniture/src/js/scripts.js` and `interactive-furniture/src/templates/base.html` to see the above instructions implemented.
+I used John Hancock's Yeoman generated starter project to implement an example for DMN's interactives team.  Check it out in the [`/examples`](https://github.com/dallasnews/dmn-vendor-wrapper/tree/master/examples/interactive-furniture) folder. It is a Browserify environment. Look at [`interactive-furniture/src/js/scripts.js`](https://github.com/dallasnews/dmn-vendor-wrapper/blob/master/examples/interactive-furniture/src/js/scripts.js) and [`interactive-furniture/src/templates/base.html`](https://github.com/dallasnews/dmn-vendor-wrapper/blob/master/examples/interactive-furniture/src/templates/base.html) to see the above instructions implemented.
 
 ## Text-based markup editors (e.g. AdPay, Obits vendors)
 
