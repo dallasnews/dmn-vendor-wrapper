@@ -179,6 +179,10 @@
     max-width: 100%;
   }
 
+  .max-w-full {
+    max-width: 100%;
+  }
+
   @media print, screen and (min-width: 30em) {
     .medium-3 {
       flex: 0 0 25%;
