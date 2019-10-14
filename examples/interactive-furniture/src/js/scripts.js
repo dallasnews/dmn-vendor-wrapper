@@ -1,6 +1,7 @@
 import $ from 'jquery';
 
-import "./../../../../dist/index";
+//import "./../../../../dist/index";
+import "./wrapper.bundle";
 import './furniture';
 
 $(document).ready(() => {
