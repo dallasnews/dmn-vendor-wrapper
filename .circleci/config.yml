@@ -6,7 +6,7 @@ jobs:
     working_directory: '~/dmn-vendor-wrapper'
     parallelism: 1
     docker:
-      - image: 'circleci/python:2.7'
+      - image: 'circleci/node:10'
     steps:
       - checkout
       - run:
