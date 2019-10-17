@@ -2,18 +2,18 @@
   "name": "client-side-ts-seed",
   "version": "0.0.1",
   "description": "Clean seed for no framework client-side experiments w/ TS",
-  "main": "index.js",
+  "main": "dist/wrapper.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js --mode development",
     "build": "webpack --config webpack.config.js --mode production"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agaricide/<repo>.git"
+    "url": "git+https://github.com/dallasnews/dmn-vendor-wrapper.git"
   },
-  "author": "agaricide (https://github.com/agaricide)",
-  "license": "GPL-3.0",
-  "homepage": "https://github.com/agaricide/<repo>#readme",
+  "author": "nigelgilbert (https://github.com/nigelgilbert)",
+  "license": "ISC",
+  "homepage": "https://github.com/dallasnews/dmn-vendor-wrapper#readme",
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
