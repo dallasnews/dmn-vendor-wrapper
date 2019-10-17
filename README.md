@@ -13,7 +13,7 @@ Simply `npm i` dependencies and run `npm run start` to start a local Webpack Dev
 ```html
 <div class="wrapper" id="dmn-header"></div>
 <div class="wrapper" id="dmn-footer"></div>
-```w
+```
 
 2. Add our S3-hosted script to your page:
 
