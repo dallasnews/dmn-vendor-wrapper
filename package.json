@@ -1,7 +1,7 @@
 {
-  "name": "client-side-ts-seed",
+  "name": "dmn-vendor-wrapper",
   "version": "0.0.1",
-  "description": "Clean seed for no framework client-side experiments w/ TS",
+  "description": "Vanilla JS implementation of DMN's header and footer",
   "main": "dist/wrapper.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.js --mode development",
