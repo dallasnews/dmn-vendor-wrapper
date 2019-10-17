@@ -1,36 +1,34 @@
 # DMN Vendor Wrapper
 
-A no-dependency Vanilla JS implementation of DMN's new Header and Footer furniture.
+A no-dependency Vanilla JS implementation of DMN's new Header and Footer that was made for Vendors like AdPay and Obits.
 
-# Development and Testing
+## Development and Testing
 
-Simply `npm i` dependencies and run `npm run start` to see a Webpack Dev Server example.
+Simply `npm i` dependencies and run `npm run start` to start a local Webpack Dev Server example.
 
-# Usage
-
-## In a Webpack or Browserify JS app
+## Usage
 
 1. Add the necessary divs to your markup:
 
-```
+```html
 <div class="wrapper" id="dmn-header"></div>
-```
-
-```
 <div class="wrapper" id="dmn-footer"></div>
+```w
+
+2. Add our S3-hosted script to your page:
+
+```html
+<script type="text/javascript" src="https://staging.dallasnews.com/sd/vendor/index.js"></script>
 ```
 
-2.  Import the built bundle from `dist/` in your JS:
 
-```
+Alternatively, add the script from built bundle in `dist/` in your JS:
+
+```js
 import "./../../../../dist/index";
 ```
 
 ## Interactives
 
-I used John Hancock's Yeoman generated starter project to implement an example for DMN's interactives team.  Check it out in the [`/examples`](https://github.com/dallasnews/dmn-vendor-wrapper/tree/master/examples/interactive-furniture) folder. It is a Browserify environment. Look at [`interactive-furniture/src/js/scripts.js`](https://github.com/dallasnews/dmn-vendor-wrapper/blob/master/examples/interactive-furniture/src/js/scripts.js) and [`interactive-furniture/src/templates/base.html`](https://github.com/dallasnews/dmn-vendor-wrapper/blob/master/examples/interactive-furniture/src/templates/base.html) to see the above instructions implemented.
+I used John Hancock's Yeoman generated starter project to implement an example for DMN's interactives team.  It is a Browserify environment.  Check it out in the [`/examples`](https://github.com/dallasnews/dmn-vendor-wrapper/tree/master/examples/interactive-furniture) folder. Look at [`interactive-furniture/src/templates/base.html`](https://github.com/dallasnews/dmn-vendor-wrapper/blob/master/examples/interactive-furniture/src/templates/base.html) to see the above instructions implemented.
 
-## Text-based markup editors (e.g. AdPay, Obits vendors)
-
-1. Add the `dmn-header` and `dmn-footer` divs to markup
-2. Copy and paste the minified bundle into a `<script></script>` tag
