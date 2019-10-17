@@ -1,6 +1,6 @@
 # DMN Vendor Wrapper
 
-A no-dependency Vanilla JS implementation of DMN's new Header and Footer furniture.
+A no-dependency Vanilla JS implementation of DMN's new Header and Footer that was made for Vendors like AdPay and Obits.
 
 ## Development and Testing
 
@@ -30,5 +30,5 @@ import "./../../../../dist/index";
 
 ## Interactives
 
-I used John Hancock's Yeoman generated starter project to implement an example for DMN's interactives team.  Check it out in the [`/examples`](https://github.com/dallasnews/dmn-vendor-wrapper/tree/master/examples/interactive-furniture) folder. It is a Browserify environment. Look at [`interactive-furniture/src/templates/base.html`](https://github.com/dallasnews/dmn-vendor-wrapper/blob/master/examples/interactive-furniture/src/templates/base.html) to see the above instructions implemented.
+I used John Hancock's Yeoman generated starter project to implement an example for DMN's interactives team.  It is a Browserify environment.  Check it out in the [`/examples`](https://github.com/dallasnews/dmn-vendor-wrapper/tree/master/examples/interactive-furniture) folder. Look at [`interactive-furniture/src/templates/base.html`](https://github.com/dallasnews/dmn-vendor-wrapper/blob/master/examples/interactive-furniture/src/templates/base.html) to see the above instructions implemented.
 
