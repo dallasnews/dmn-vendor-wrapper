@@ -11,7 +11,7 @@ const config = {
     index: "./index.js"
   },
   output: {
-    filename: "index.js",
+    filename: "wrapper.js",
     path: DIST
   },
   resolve: {
