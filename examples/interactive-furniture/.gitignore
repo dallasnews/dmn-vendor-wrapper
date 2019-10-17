@@ -184,3 +184,6 @@ src/assets/*
 
 # .gitkeeps (used by some subgenerators)
 !src/assets/.gitkeep
+
+# build
+dist
