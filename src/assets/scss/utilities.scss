@@ -44,7 +44,10 @@
     display: inline-block;
   }
 
-  .hidden {
+  // Various vendors abuse .hidden with !important.
+  // This breaks our styles.
+  // As a workaround, I've renamed the .hidden utility.
+  .no-leak-hidden {
     display: none;
   }
 
