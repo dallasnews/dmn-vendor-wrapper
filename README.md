@@ -18,14 +18,14 @@ Simply `npm i` dependencies and run `npm run start` to start a local Webpack Dev
 2. Add our S3-hosted script to your page:
 
 ```html
-<script type="text/javascript" src="https://staging.dallasnews.com/sd/vendor/index.js"></script>
+<script type="text/javascript" src="https://staging.dallasnews.com/sd/vendor/wrapper.js"></script>
 ```
 
 
 Alternatively, add the script from built bundle in `dist/` in your JS:
 
 ```js
-import "./../../../../dist/index";
+import "./../../../../dist/wrapper";
 ```
 
 ## Interactives
