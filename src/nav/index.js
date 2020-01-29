@@ -1,4 +1,4 @@
 import markup from "./nav.html";
-import "./nav.css";
+import "./nav.scss";
 
 export default () => markup;
