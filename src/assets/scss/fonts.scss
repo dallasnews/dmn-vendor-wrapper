@@ -14,28 +14,26 @@
   font-display: swap;
 }
 
-.wrapper {
-  .font-gotham {
-    font-family: "HCo Gotham";
-  }
+.wrapper .font-gotham {
+  font-family: "HCo Gotham";
+}
 
-  .font-10 {
-    font-size: 12px;
-    line-height: 1.45;
-    letter-spacing: 0;
-  }
+.wrapper .font-10 {
+  font-size: 12px;
+  line-height: 1.45;
+  letter-spacing: 0;
+}
 
-  .font-20 {
-    font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 0;
-  }
+.wrapper .font-20 {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
 
-  .font-normal {
-    font-weight: 400;
-  }
+.wrapper .font-normal {
+  font-weight: 400;
+}
 
-  .font-medium {
-    font-weight: 500;
-  }
+.wrapper .font-medium {
+  font-weight: 500;
 }
