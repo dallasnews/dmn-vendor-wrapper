@@ -6,6 +6,13 @@ import Masthead from "./masthead";
 import Nav from "./nav";
 import Footer from "./footer";
 
+import "./_buttons.scss";
+
+
+import users from "./header/example.json";
+
+import Header from "./header";
+
 const addTemplate = (el, markup) => {
   try {
     const div = document.createElement("div");
@@ -16,7 +23,13 @@ const addTemplate = (el, markup) => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  addTemplate("dmn-header", Masthead());
+  // add templates
+  addTemplate("dmn-header", Header());
   addTemplate("dmn-header", Nav());
   addTemplate("dmn-footer", Footer());
+
+  // example of post install
+  // const names = users.map((user) => user.name);
+  // document.getElementsByClassName("nav")[0].innerHTML = names;
+  // console.log("done did it");
 });

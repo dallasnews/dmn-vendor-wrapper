@@ -1,0 +1,123 @@
+$grid-col-1-width: 140px;
+$grid-col-2-width: 160px;
+$grid-col-4-width: 120px;
+$grid-col-5-width: 180px;
+
+.header2 {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: "sections search nav user promo" "logo logo logo logo logo";
+  grid-template-columns: $grid-col-1-width $grid-col-2-width 1fr $grid-col-4-width $grid-col-5-width;
+
+  * {
+    border: 1px solid gray;
+  }
+}
+
+.sections {
+  padding: 10px 16px;
+  grid-area: sections;
+  display: flex;
+  align-items: center;
+
+  button {
+    background-color: white;
+    padding: 6px 10px;
+    border-radius: 0.125rem;
+    cursor: pointer;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    place-content: center;
+  }
+}
+
+.search {
+  grid-area: search;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+
+  button {
+    cursor: pointer;
+    display: flex;
+    place-content: center;
+    padding: 6px 10px;
+    background-color: white;
+  }
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  overflow-x: hidden;
+
+  ul,
+  li {
+    list-style: none;
+    display: flex;
+    white-space: nowrap;
+  }
+}
+
+.user {
+  padding: 10px 16px;
+  grid-area: user;
+  display: flex;
+  place-content: center;
+}
+
+.promo {
+  grid-area: promo;
+  display: flex;
+  place-content: center;
+
+  button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    background-color: #197bc1;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    min-width: 120px;
+    min-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 2px;
+    padding: 0 1em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 40px;
+    white-space: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+  }
+}
+
+.logo {
+  border-top: 1px solid black;
+  grid-area: logo;
+}
+
+// Mobile styles
+@media only screen and (max-width: 1024px) {
+  .header2 {
+    grid-template-areas: "sections logo user" "promo promo promo";
+    grid-template-columns: minmax(0, 1fr) 2fr minmax(0, 1fr);
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+}

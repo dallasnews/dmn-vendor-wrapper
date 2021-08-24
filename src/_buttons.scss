@@ -1,0 +1,25 @@
+.btn {
+    // @include transition(background-color);
+    min-width: 120px;
+    // min-height: $btn-height;
+    display: inline-block;
+    text-align: center;
+    border-radius: 2px;
+    padding: 0 1em;
+    // line-height: $btn-height;
+    white-space: normal;
+    // @include font("secondaryBoldCaps");
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+  
+    &:hover {
+      // @include transition(all);
+    }
+  }
+
+
+  .btn-blue {
+    // @include button-basic(theme("colors.blue"), theme("colors.blue-dark"));
+  }
+  
