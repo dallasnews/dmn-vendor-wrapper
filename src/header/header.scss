@@ -26,7 +26,7 @@ $grid-col-5-width: 180px;
     border-radius: 0.125rem;
     cursor: pointer;
     display: flex;
-    border: 1px solid #101010;;
+    border: 1px solid #101010;
 
     place-content: center;
 
@@ -61,13 +61,20 @@ $grid-col-5-width: 180px;
   grid-area: nav;
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  position: relative;
   overflow-x: hidden;
 
   font-family: "HCo Gotham";
   font-weight: 500;
   font-size: 11px;
   text-transform: uppercase;
+
+  ul {
+    margin: 0 auto;
+    height: 100%;
+    overflow-x: scroll;
+    align-items: center;
+  }
 
   ul,
   li {
@@ -164,4 +171,14 @@ $grid-col-5-width: 180px;
   .logo {
     border-top: none;
   }
+}
+
+.rollerOverlay {
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  top: 0;
+  content: " ";
+  right: 0;
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.01) 0, #fff);
 }
