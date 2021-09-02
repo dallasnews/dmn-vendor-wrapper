@@ -56,3 +56,27 @@
     }
   }
 }
+
+.featured {
+  display: flex;
+  align-items: center;
+  font-family: "HCo Gotham";
+  font-weight: 500;
+  color: #101010;
+
+  span {
+    margin-right: 10px;
+    color: rgba(25, 123, 193, 1);
+  }
+
+  ul,
+  li {
+    list-style: none;
+    display: flex;
+    white-space: nowrap;
+  }
+
+  li {
+    margin-right: 20px;
+  }
+}
