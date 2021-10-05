@@ -175,7 +175,8 @@ $grid-col-5-width: 180px;
   }
 
   // Mobile styles
-  @media only screen and (max-width: 1024px) {
+  // The breakpoint used to be 1024px, but I changed it for compatibility with Obituaries
+  @media only screen and (max-width: 768px) {
     .header2 {
       grid-template-areas: "sections logo user" "promo promo promo";
       grid-template-columns: minmax(0, 1fr) 2fr minmax(0, 1fr);

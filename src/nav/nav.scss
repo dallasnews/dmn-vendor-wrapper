@@ -36,7 +36,8 @@
     outline: 0;
   }
 
-  @media screen and (min-width: 1024px) {
+  // The breakpoint used to be 1024px, but I changed it for compatibility with Obituaries
+  @media screen and (min-width: 768px) {
     .navbar-segment-left {
       flex-basis: 200px;
       flex-shrink: 2;
@@ -58,6 +59,7 @@
 }
 
 .featured {
+  padding-left: 16px;
   display: flex;
   align-items: center;
   font-family: "HCo Gotham";
