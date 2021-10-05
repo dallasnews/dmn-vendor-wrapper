@@ -32,7 +32,6 @@ jobs:
             --exclude=".gitignore" \
             --exclude="*.DS_Store/*" \
             --exclude="*.git/*"
-          overwrite: true
 
 workflows:
   version: 2
