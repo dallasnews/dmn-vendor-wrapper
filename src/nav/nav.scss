@@ -36,7 +36,8 @@
     outline: 0;
   }
 
-  @media screen and (min-width: 1024px) {
+  // The breakpoint used to be 1024px, but I changed it for compatibility with Obituaries
+  @media screen and (min-width: 768px) {
     .navbar-segment-left {
       flex-basis: 200px;
       flex-shrink: 2;
@@ -54,5 +55,30 @@
       flex-shrink: 2;
       flex-grow: 1;
     }
+  }
+}
+
+.featured {
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+  font-family: "HCo Gotham";
+  font-weight: 500;
+  color: #101010;
+
+  span {
+    margin-right: 10px;
+    color: rgba(25, 123, 193, 1);
+  }
+
+  ul,
+  li {
+    list-style: none;
+    display: flex;
+    white-space: nowrap;
+  }
+
+  li {
+    margin-right: 20px;
   }
 }
