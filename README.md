@@ -6,6 +6,8 @@ A no-dependency Vanilla JS implementation of DMN's new Header and Footer that wa
 
 Simply `npm i` dependencies and run `npm run start` to start a local Webpack Dev Server example.
 
+When you're ready to open a pull request, run `npm run build` and commit the resulting change to `dist/wrapper.js`.
+
 ## Usage
 
 1. Add the necessary divs to your markup:
