@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  aws-s3: circleci/aws-s3@1.0.11
+  aws-s3: circleci/aws-s3@3.0
 jobs:
   build:
     working_directory: '~/dmn-vendor-wrapper'
@@ -32,7 +32,6 @@ jobs:
             --exclude=".gitignore" \
             --exclude="*.DS_Store/*" \
             --exclude="*.git/*"
-          overwrite: true
 
 workflows:
   version: 2
