@@ -12,9 +12,8 @@ TL;DR simply merge your branch into `master` and the CircleCI setup will re-push
 
 ## Development and Testing
 
-Simply `npm i` dependencies and run `npm run start` to start a local Webpack Dev Server example.
-
-When you're ready to open a pull request, run `npm run build` and commit the resulting change to `dist/wrapper.js`.
+- `npm i` dependencies and run `npm run start` to start a local Webpack Dev Server example.
+- when you're ready to open a pull request, run `npm run build` and commit the resulting change to `dist/wrapper.js`.
 
 ## Usage
 
