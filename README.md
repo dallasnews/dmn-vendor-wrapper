@@ -2,6 +2,14 @@
 
 A no-dependency Vanilla JS implementation of DMN's new Header and Footer that was made for Vendors like AdPay and Obits.
 
+
+## Deployment
+
+TL;DR simply merge your branch into `master` and the CircleCI setup will re-push your built code into our production S3 bucket!
+- this CircleCI script copies the `dist/` folder into S3
+- in this repo, the `dist/` file is _not_ in `.gitignore`
+- make sure to run `npm run build` prior to merging into master so that the compiled code can be copied
+
 ## Development and Testing
 
 Simply `npm i` dependencies and run `npm run start` to start a local Webpack Dev Server example.
