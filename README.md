@@ -74,4 +74,4 @@ I used John Hancock's Yeoman generated starter project to implement an example f
 
 6.  Open a browser tab and navigate to http://localhost:8080/
 
-7.  Verify that your changes matches the site
+7.  Verify that your changes match the site
