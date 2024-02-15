@@ -59,3 +59,19 @@ I used John Hancock's Yeoman generated starter project to implement an example f
 ```
 
 - change that link to the new promo offer, e.g. `dn-header-08042021`
+
+## Testing
+
+1.  Clone this repo if it's the first time.
+
+2.  Checkout the change branch
+
+3.  Install all packages - `npm i`
+
+4.  Build Code - `npm run build`
+
+5.  Run Server - `npm run start`
+
+6.  Open a browser tab and navigate to http://localhost:8080/
+
+7.  Verify that your changes match the site
