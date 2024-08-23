@@ -2,8 +2,6 @@ import "./assets/scss/normalize.scss";
 import "./assets/scss/grid.scss";
 import "./assets/scss/utilities.scss";
 import "./assets/scss/fonts.scss";
-import Masthead from "./masthead";
-import Nav from "./nav";
 import Footer from "./footer";
 
 import "./_buttons.scss";
