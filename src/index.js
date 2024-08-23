@@ -8,7 +8,6 @@ import Footer from "./footer";
 
 import "./_buttons.scss";
 
-
 import users from "./header/example.json";
 
 import Header from "./header";
@@ -25,7 +24,7 @@ const addTemplate = (el, markup) => {
 document.addEventListener("DOMContentLoaded", () => {
   // add templates
   addTemplate("dmn-header", Header());
-  addTemplate("dmn-header", Nav());
+  //addTemplate("dmn-header", Nav());
   addTemplate("dmn-footer", Footer());
 
   // example of post install
