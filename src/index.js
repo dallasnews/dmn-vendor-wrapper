@@ -2,6 +2,8 @@ import "./assets/scss/normalize.scss";
 import "./assets/scss/grid.scss";
 import "./assets/scss/utilities.scss";
 import "./assets/scss/fonts.scss";
+import Masthead from "./masthead";
+import Nav from "./nav";
 import Footer from "./footer";
 
 import "./_buttons.scss";
@@ -22,6 +24,7 @@ const addTemplate = (el, markup) => {
 document.addEventListener("DOMContentLoaded", () => {
   // add templates
   addTemplate("dmn-header", Header());
+  addTemplate("dmn-header", Nav());
   addTemplate("dmn-footer", Footer());
 
   // example of post install

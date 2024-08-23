@@ -1,0 +1,84 @@
+.wrapper {
+  .navbar {
+    min-height: 48px;
+  }
+
+  .top-level-link {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .top-level-link,
+  .top-level-link:focus {
+    outline: 0;
+  }
+
+  .nav-link {
+    min-width: 0;
+    transition: opacity 0.3s ease;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+    line-height: 1.45;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    align-items: center;
+    display: flex;
+  }
+
+  .focus_outline-none:focus,
+  .outline-none {
+    outline: 0;
+  }
+
+  // The breakpoint used to be 1024px, but I changed it for compatibility with Obituaries
+  @media screen and (min-width: 768px) {
+    .navbar-segment-left {
+      flex-basis: 200px;
+      flex-shrink: 2;
+      flex-grow: 1;
+    }
+
+    .navbar-segment-center {
+      flex-basis: auto;
+      flex-shrink: 1;
+      flex-grow: 2;
+    }
+
+    .navbar-segment-right {
+      flex-basis: 200px;
+      flex-shrink: 2;
+      flex-grow: 1;
+    }
+  }
+}
+
+.featured {
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+  font-family: "HCo Gotham";
+  font-weight: 500;
+  color: #101010;
+
+  span {
+    margin-right: 10px;
+    color: rgba(25, 123, 193, 1);
+  }
+
+  ul,
+  li {
+    list-style: none;
+    display: flex;
+    white-space: nowrap;
+  }
+
+  li {
+    margin-right: 20px;
+  }
+}
