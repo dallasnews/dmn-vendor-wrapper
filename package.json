@@ -1,6 +1,6 @@
 {
   "name": "dmn-vendor-wrapper",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Vanilla JS implementation of DMN's header and footer",
   "main": "dist/wrapper.js",
   "scripts": {
