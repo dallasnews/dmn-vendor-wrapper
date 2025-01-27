@@ -1,22 +1,22 @@
 @font-face {
-  font-family: "HCo Gotham";
-  src: url("../fonts/woff2/Gotham-Book_Web-kern-latin.woff2") format("woff2");
+  font-family: "Inter";
+  src: url("../fonts/woff2/Inter-Book_Web-kern-latin.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "HCo Gotham";
-  src: url("../fonts/woff2/Gotham-Medium_Web-kern-latin.woff2") format("woff2");
-  font-weight: 500;
+  font-family: "Inter";
+  src: url("../fonts/woff2/Inter-Bold_Web-kern-latin.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 .wrapper {
-  .font-gotham {
-    font-family: "HCo Gotham";
+  .font-inter {
+    font-family: "Inter";
   }
 
   .font-10 {
@@ -36,6 +36,6 @@
   }
 
   .font-medium {
-    font-weight: 500;
+    font-weight: 700;
   }
 }
