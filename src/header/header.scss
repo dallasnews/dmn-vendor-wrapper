@@ -86,7 +86,8 @@ $grid-col-5-width: 180px;
     font-weight: 700;
     font-size: 11px;
     text-transform: uppercase;
-
+    line-height: 1.2;
+    letter-spacing: 0.08em;
     ul {
       margin: 0 auto;
       height: 100%;
@@ -130,6 +131,7 @@ $grid-col-5-width: 180px;
     display: flex;
     place-content: center;
     background-color: white;
+    font-family: "Inter";
 
     button {
       padding-top: 6px;
@@ -146,7 +148,7 @@ $grid-col-5-width: 180px;
       border-radius: 2px;
       line-height: 40px;
       white-space: normal;
-      font-weight: 500;
+      font-weight: 700;
       font-size: 14px;
       letter-spacing: 0.05em;
       cursor: pointer;
@@ -154,8 +156,8 @@ $grid-col-5-width: 180px;
 
     .top-text {
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      font-size: 9px;
+      letter-spacing: 0.03em;
+      font-size: 10px;
       line-height: 1.1;
     }
 
@@ -213,8 +215,8 @@ $grid-col-5-width: 180px;
 
       .bottom-text {
         font-size: 18px;
-        line-height: 1.4;
-        letter-spacing: 0;
+        line-height: 1.5;
+        letter-spacing: 001em;
         font-family: "Inter";
         text-transform: none;
       }
