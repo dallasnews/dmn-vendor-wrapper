@@ -32,7 +32,7 @@ $grid-col-5-width: 180px;
 
       font-family: "Inter";
       font-weight: 700;
-      font-size: 12px;
+      font-size: 13px;
 
       svg {
         flex-shrink: 0;
@@ -50,7 +50,11 @@ $grid-col-5-width: 180px;
 
     // TODO: space this out good
     // border-right: 1px solid black;
-
+    .search-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     a,
     button {
       height: 100%;
@@ -71,7 +75,7 @@ $grid-col-5-width: 180px;
 
       font-family: "Inter";
       font-weight: 700;
-      font-size: 12px;
+      font-size: 13px;
     }
   }
 
@@ -84,7 +88,7 @@ $grid-col-5-width: 180px;
 
     font-family: "Inter";
     font-weight: 700;
-    font-size: 11px;
+    font-size: 12px;
     text-transform: uppercase;
     line-height: 1.2;
     letter-spacing: 0.08em;
@@ -108,7 +112,7 @@ $grid-col-5-width: 180px;
   }
 
   .user {
-    padding: 10px 16px;
+    padding: 10px 15px;
     grid-area: user;
     display: flex;
     border-left: 1px solid #eceff1;
@@ -119,7 +123,7 @@ $grid-col-5-width: 180px;
       cursor: pointer;
       font-family: "Inter";
       font-weight: 700;
-      font-size: 12px;
+      font-size: 13px;
       background-color: white;
       display: flex;
       place-content: center;
