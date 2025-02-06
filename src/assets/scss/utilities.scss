@@ -1,3 +1,11 @@
+body {
+  margin: 0 !important;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .wrapper {
   .text-gray-dark {
     color: #5c5c5c;
@@ -58,6 +66,10 @@
     display: flex;
   }
 
+  .flex-1 {
+    flex: 1 1 0%;
+  }
+
   .flex-col {
     flex-direction: column;
   }
@@ -76,6 +88,10 @@
 
   .justify-around {
     justify-content: space-around;
+  }
+
+  .justify-between {
+    justify-content: space-between;
   }
 
   .items-center {
@@ -105,6 +121,10 @@
     text-transform: uppercase;
   }
 
+  .text-right {
+    text-align: end;
+  }
+
   .overflow-hidden {
     overflow: hidden;
   }
@@ -132,9 +152,23 @@
     padding-right: 12px;
   }
 
+  .px-6 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .px-7 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
   .py-6 {
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+
+  .p-6 {
+    padding: 16px;
   }
 
   .pb-6 {
@@ -161,6 +195,10 @@
     width: 24px;
   }
 
+  .this-is-home {
+    height: 14px;
+  }
+
   .small-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%;
@@ -183,6 +221,15 @@
 
   .max-w-full {
     max-width: 100%;
+  }
+
+  .max-w-80 {
+    max-width: 80rem;
+  }
+
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media print, screen and (min-width: 30em) {
@@ -240,6 +287,18 @@
     .lg_flex {
       display: flex;
     }
+
+    .lg_flex-row {
+      flex-direction: row;
+    }
+
+    .lg_justify-end {
+      justify-content: flex-end;
+    }
+
+    .lg_text-right {
+      text-align: end;
+    }
   }
 
   @media (min-width: 0) and (max-width: 768px) {
@@ -249,6 +308,11 @@
 
     .md-down_mb-8 {
       margin-bottom: 24px;
+    }
+
+    .md-down_px-9 {
+      padding-left: 31px;
+      padding-right: 31px;
     }
 
     .md-down_border-b {
